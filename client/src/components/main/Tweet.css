@@ -1,0 +1,14 @@
+.tweet-header{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+  align-items:baseline;
+  gap:20px;
+}
+.tweet{
+    width:100%;
+    /* border-radius:5px; */
+    border-bottom:1px solid black;
+    margin:15px;
+    padding:15px;
+}
