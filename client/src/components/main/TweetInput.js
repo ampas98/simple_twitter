@@ -18,7 +18,7 @@ export default function TweetInput({url, setError, getTweets}) {
 const handleSubmit = async (e)=> {
         e.preventDefault();
        try{
-        const data = await postRequest({content:tweet}, url);
+        const data = await postRequest( url, {content:tweet},);
         
         const json=await data.json();
        
