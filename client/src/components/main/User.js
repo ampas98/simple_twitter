@@ -17,7 +17,7 @@ export default function User({url, user, setError, setUser}){
   const handleClick=async ()=>{
     try{
    
-      const data=await postRequest({}, url);
+      const data=await postRequest(url, {});
       // If response is fine remove local storage and set state
       if(data.ok){
       localStorage.removeItem('username');
