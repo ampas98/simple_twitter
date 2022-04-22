@@ -21,6 +21,7 @@ const fromBase64 = base64 =>
 module.exports.createToken=async (user_id)=>{
     try{
     const token = await new Promise((resolve, reject) => {
+        // Create random key
         crypto.randomBytes(16, (error, data) => {
           error ? reject(error) : resolve(fromBase64(data.toString('base64')));
         });

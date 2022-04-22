@@ -1,5 +1,5 @@
 {
-  "name": "breachlock_twitter",
+  "name": "simple_twitter",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
